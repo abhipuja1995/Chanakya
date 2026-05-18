@@ -366,6 +366,18 @@ const useCases = [
     title: 'A report you can argue with',
     body: 'When the simulation ends, the conversation starts. Ask your report why a cluster formed, what an actor would say next, or how a different trigger changes the outcome.',
     tag: 'For research & analysis'
+  },
+  {
+    icon: '📈',
+    title: 'Price your conviction before the market does',
+    body: 'Think you know how a ballot, rate decision, or macro event plays out? Run the scenario in Chanakya first — see where probability clusters form and which outcome the crowd will converge on before it shows up on any prediction market.',
+    tag: '🇺🇸 For prediction market traders · Polymarket-style'
+  },
+  {
+    icon: '🏦',
+    title: 'Trade the narrative, not just the number',
+    body: 'Before an RBI policy meet, Union Budget, or sector announcement — simulate how Nifty 50 stocks, FII flows, and retail sentiment move. Know which sectors crowd in and which rotate out before the opening bell.',
+    tag: '🇮🇳 For equity traders & fund managers'
   }
 ]
 
@@ -404,22 +416,22 @@ const workflow = [
 
 /* ── Drops ── */
 .drop-1 {
-  width: 720px; height: 720px;
-  background: radial-gradient(circle, var(--blob-1) 0%, transparent 70%);
-  top: -200px; right: -180px;
+  width: 800px; height: 800px;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, var(--blob-1) 0%, transparent 75%);
+  top: -250px; right: -200px;
   animation-duration: 22s;
 }
 .drop-2 {
-  width: 560px; height: 560px;
-  background: radial-gradient(circle, var(--blob-2) 0%, transparent 70%);
-  bottom: 10%; left: -140px;
+  width: 640px; height: 640px;
+  background: radial-gradient(ellipse 55% 60% at 50% 50%, var(--blob-2) 0%, transparent 75%);
+  bottom: 5%; left: -160px;
   animation-duration: 18s;
   animation-delay: -9s;
 }
 .drop-3 {
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, var(--blob-3) 0%, transparent 70%);
-  top: 40%; left: 40%;
+  width: 500px; height: 500px;
+  background: radial-gradient(ellipse 50% 55% at 50% 50%, var(--blob-3) 0%, transparent 70%);
+  top: 35%; left: 38%;
   animation-duration: 26s;
   animation-delay: -4s;
 }
@@ -687,7 +699,7 @@ const workflow = [
 }
 .usecases-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .uc-card {
@@ -778,9 +790,12 @@ const workflow = [
   border-radius: 20px;
   overflow: hidden;
   box-shadow:
-    0 0 0 1px rgba(139,92,246,0.06),
-    0 0 60px var(--drop-shadow),
-    0 24px 64px rgba(0,0,0,0.3);
+    0 0 0 1px rgba(139,92,246,0.12),
+    0 0 80px var(--drop-shadow),
+    0 24px 64px rgba(0,0,0,0.35);
+  background: var(--surface) !important;
+  backdrop-filter: blur(28px) !important;
+  -webkit-backdrop-filter: blur(28px) !important;
 }
 .console-top-bar {
   display: flex;
